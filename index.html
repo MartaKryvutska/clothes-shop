@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothes Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <section class="section--intro">
+        <nav class="nav">
+            <ul class="nav__bar"> 
+                <li ><a class="nav__bar__item logo" href="#">My Shop</a></li>
+                <li ><a class="nav__bar__item" href="#">Shop</a></li>
+                <li ><a class="nav__bar__item" href="#">Check Out</a></li>
+                <li class="nav__bar__item login__container">
+                    <input class="login__username" type="text" placeholder="User">
+                    <input class="login__password" type="text" placeholder="Password">
+                    <button class="login__btn">→</button>
+                </li>         
+            </ul>
+        </nav>
+        <div class="cart hidden">
+            <div class="cart__content">
+                <h1 class="cart__header">
+                    Your Items
+                    <button class="cart__buy">Buy</button>
+                </h1>
+                <div class="cart__items"></div>
+            </div>
+        </div>
+        <div class="collection">
+            <h1 class="collection__header">Find fresh clothes starting from 5$</h1>
+            <button class="collection__btn">Shop Now</button>
+        </div>
+    </section>
+    <section class="section--shop">
+        <h2 class="section--shop__header">Shop Everything You Need!</h2>
+        <div class="section--shop__bar">
+            <span class="section--shop__bar__filter">
+                <button class="section--shop__bar__filter__button">⬆</button>
+                <button class="section--shop__bar__filter__button">⬇</button>
+            </span>
+            <div class="section--shop__bar__search">
+            <input class="section--shop__bar__search__input" type="text" id="search" placeholder="Search for your item">
+            <label class="section--shop__bar__search__label" for="search">Search for your item</label>
+        </div>
+        </div>
+        <div class="items">
+             <!-- <div class="items__item">
+                <div class="items__item__img"><img src="sneakers.webp" alt="jeans"></div>  
+                <h4 class="items__item__name">name:price</h4>
+            </div>  -->
+            <!-- <div class="items__item">
+                <div class="items__items__img">img</div> 
+                <h4 class="items__item__name">name:price</h4>
+            </div>
+            <div class="items__item">
+                <div class="items__items__img">img</div> 
+                <h4 class="items__item__name">name:price</h4>
+            </div> -->
+            
+        </div>
+    </section>
+   
+</body>
+<script type="module" src="script.js"></script>
+</html>
