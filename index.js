@@ -5,8 +5,8 @@ const exp = require('constants');
 const connection = mysql.createConnection({
   host     : 'localhost',
   user     : 'root',
-  password : 'password',
-  database : 'sqlprojectdb'
+  password : 'user123456',
+  database : 'store'
 });
 
 
