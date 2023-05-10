@@ -8,8 +8,8 @@ const data =[
 ];
 
 const user = {
-    name: "Andriy",
-    user:"andrew123",
+    name: "marta",
+    user:"marta123",
     password:"12345"
 }
 // variables
