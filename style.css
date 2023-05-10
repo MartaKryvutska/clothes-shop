@@ -197,7 +197,7 @@ body {
   background-color: rgba(12, 10, 9, 0.8);
   height: 100vh;
   width: 95.57%;
-  position: fixed;
+  position:static;
   transition: all 0.3s;
 }
 .cart__content {
