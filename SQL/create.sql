@@ -12,7 +12,7 @@ CREATE TABLE customers (
     customer_id INT PRIMARY KEY,
     customer_name VARCHAR(50),
     email VARCHAR(50),
-    agt INT
+    age INT
 );
 
 CREATE TABLE sales (
