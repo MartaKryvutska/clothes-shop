@@ -12,7 +12,7 @@ CREATE TABLE customers (
     customer_id INT PRIMARY KEY,
     customer_name VARCHAR(50),
     email VARCHAR(50),
-    agt INT
+    age INT
 );
 
 CREATE TABLE sales (
@@ -42,3 +42,8 @@ Create employee (id int primary key,
 Firstname varchar(30),
 Lastname varchar(30),
 Position varchar (10));
+
+
+
+alter table zamovlenia ADD employee_id int;
+
