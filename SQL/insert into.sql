@@ -108,3 +108,18 @@ INSERT INTO  zamovlenia ( zamovlenia_id, Customer_id, DATA_DELIVERY, Zamovlenia,
 
 
 
+
+insert into zamovlenia ( employee_id) Values
+('5'),
+('8'),
+('11'),
+('11'),
+('8'),
+('5'),
+('11'),
+('5'),
+('8'),
+('11');
+
+
+
