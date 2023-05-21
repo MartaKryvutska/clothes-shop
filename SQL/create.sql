@@ -42,3 +42,8 @@ Create employee (id int primary key,
 Firstname varchar(30),
 Lastname varchar(30),
 Position varchar (10));
+
+
+
+alter table zamovlenia ADD employee_id int;
+
