@@ -24,6 +24,10 @@ FROM customers
 WHERE age>=18;
 
 
+SELECT products.product_name, COUNT(sales.product_id) AS "Number of purchases" 
+FROM products INNER JOIN sales on sales.product_id=products.product_id
+GROUP BY products.product_name;
+
 
 SELECT MAX(t) AS "The most expensive order" FROM( SELECT SUM(sales.quantity*products.price) AS t, Zamovlenia.zamovlenia_id
 FROM Zamovlenia INNER JOIN sales ON sales.zamovlenia_id=Zamovlenia.zamovlenia_id INNER JOIN products ON products.product_id=sales.product_id
