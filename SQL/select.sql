@@ -42,4 +42,18 @@ GROUP BY employee.Firstname,employee.Lastname;
 
 
 
+SELECT CASE
+  WHEN age<18 THEN 'Teenager'
+  WHEN age>=18 and age<40 THEN 'Adult'
+  WHEN age>=40 THEN 'Old'
+END as Category, products.product_type,  COUNT(products.product_id) as "Count of product types"
+
+FROM customers inner join Zamovlenia on Zamovlenia.Customer_id = customers.customer_id inner join sales on Zamovlenia.zamovlenia_id=sales.zamovlenia_id inner join products on products.product_id=sales.product_id
+GROUP BY products.product_type, (CASE
+  WHEN age<18 THEN 'Teenager'
+  WHEN age>=18 and age<40 THEN 'Adult'
+  WHEN age>=40 THEN 'Old'
+END) ;
+
+
 
