@@ -1,0 +1,7 @@
+update products
+inner join (SELECT products.product_id, count(sales.product_id) as t1
+FROM products INNER JOIN sales on sales.product_id=products.product_id
+group by products.product_id
+HAVING count(sales.product_id)>1) as t2 on t2.product_id=products.product_id
+set 
+products.price=1.10*products.price ;
