@@ -19,6 +19,7 @@ CREATE TABLE sales (
     transaction_id INT PRIMARY KEY,
     customer_id INT,
     product_id INT,
+    date_time transaction datatype,
     quantity INT,
     zamovlenia_id INT,
     FOREIGN KEY (customer_id) REFERENCES customers(customer_id),
@@ -29,7 +30,8 @@ CREATE TABLE Zamovlenia ( zamovlenia_id int primary key,
 Customer_id int,
 DATA_DELIVERY DATEtime,
 Zamovlenia  DATE,
-PAYMENT_METHOD CHAR(15));
+PAYMENT_METHOD CHAR(15)
+employee_id int ;
 
 
 CREATE TABLE SKLAD (
@@ -38,12 +40,12 @@ quanity int
 );
 
 
-Create employee (id int primary key,
+Create employee (employee_id int primary key,
 Firstname varchar(30),
 Lastname varchar(30),
 Position varchar (10));
 
 
 
-alter table zamovlenia ADD employee_id int;
+
 
