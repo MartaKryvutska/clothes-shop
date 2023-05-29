@@ -48,4 +48,24 @@ Position varchar (10));
 
 
 
+alter table Zamovlenia
+add foreign key (customer_id) references customers(customer_id);
+alter table Zamovlenia add foreign key (employee_id) references employee(id);
+
+alter table Sklad
+add foreign key (product_id) references products(product_id);
+
+
+alter table Zamovlenia
+add foreign key (customer_id) references customers(customer_id);
+
+alter table sales
+add foreign key (product_id) references products(product_id);
+
+
+alter table sales
+add foreign key (zamovlenia_id) references zamovlenia(zamovlenia_id);
+
+
+
 
